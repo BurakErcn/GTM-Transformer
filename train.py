@@ -28,6 +28,7 @@ def run(args):
     col_dict = torch.load(Path(args.data_folder + 'color_labels.pt'))
     fab_dict = torch.load(Path(args.data_folder + 'fabric_labels.pt'))
 
+
     # Load Google trends
     gtrends = pd.read_csv(Path(args.data_folder + 'gtrends.csv'), index_col=[0], parse_dates=True)
 
