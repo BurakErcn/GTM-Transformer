@@ -6,7 +6,6 @@ import torch.nn.functional as F
 import pytorch_lightning as pl
 from transformers import pipeline
 from torchvision import models
-from fairseq.optim.adafactor import Adafactor
 
 class PositionalEncoding(nn.Module):
     def __init__(self, d_model, dropout=0.1, max_len=52):
